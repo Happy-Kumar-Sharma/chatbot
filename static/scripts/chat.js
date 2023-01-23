@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
+    let firstMessage = "Welcome! We're glad you're here. We're a digital marketing agency that's here to help you achieve your business goals."
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -94,7 +94,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("I love BusinessAra")
 }
 
 // Press enter to send a message
