@@ -38,7 +38,7 @@ function getTime() {
 // let result = text.link("https://web.whatsapp.com/send?phone=7493980307&text=Hii%20BusinessAra,%20I%20would%20like%20to%20discuss%20about%20my%20business.");
 
 var img = "<img src= 'https://cdn.jsdelivr.net/gh/Happy-Kumar-Sharma/chatbot/content/whatsapp-icon.svg'"
-let result = img.link("https://web.whatsapp.com/send?phone=7493980307&text=Hii%20BusinessAra,%20I%20would%20like%20to%20discuss%20about%20my%20business.");
+let result = img.link("https://wa.me/7493980307?text=&text=Hii%20BusinessAra,%20I%20would%20like%20to%20discuss%20about%20my%20business.");
 
 
 // Gets the first message
