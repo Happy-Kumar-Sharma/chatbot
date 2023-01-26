@@ -33,9 +33,17 @@ function getTime() {
     return time;
 }
 
+// Bind chat url with text
+// let text = "WhatsApp Us Now";
+// let result = text.link("https://web.whatsapp.com/send?phone=7493980307&text=Hii%20BusinessAra,%20I%20would%20like%20to%20discuss%20about%20my%20business.");
+
+var img = "<img src= '../../content/whatsapp-icon.svg'"
+let result = img.link("https://web.whatsapp.com/send?phone=7493980307&text=Hii%20BusinessAra,%20I%20would%20like%20to%20discuss%20about%20my%20business.");
+
+
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Welcome! We're glad you're here. We're a digital marketing agency that's here to help you achieve your business goals."
+    let firstMessage = "Welcome aboard! We're excited to help you succeed. Talk with expert directly on WhatsApp " + result;
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -60,7 +68,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Hello BusinessAra";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -83,10 +91,10 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
-    // setTimeout(() => {
-    //     getHardResponse(sampleText);
-    // }, 1000)
+    // Uncomment this if you want the bot to respond to this buttonSendText event
+    setTimeout(() => {
+        getHardResponse(sampleText);
+    }, 1000)
 }
 
 function sendButton() {
@@ -94,7 +102,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("I love BusinessAra")
+    buttonSendText("I Love BusinessAra")
 }
 
 // Press enter to send a message
