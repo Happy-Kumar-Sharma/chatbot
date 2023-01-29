@@ -121,6 +121,30 @@
     animation: floatup .5s forwards
 }
 
+.scrollmenu {
+    overflow: auto;
+    display: flexbox;
+    white-space: nowrap;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.scrollmenu choice {
+    background-color: #5ca6fa;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  border-radius: 8px;
+  border-bottom-right-radius: 2px;
+}
+
+div.scrollmenu choice:hover {
+    background-color: #777;
+  }
+
 .botText {
     color: #000;
     font-family: Helvetica;
