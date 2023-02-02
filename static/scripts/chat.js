@@ -45,6 +45,12 @@ function firstBotMessage() {
   document.getElementById("botStarterMessage").innerHTML =
     '<p class="botText"><span>' + firstMessage + "</span></p>";
 
+  document.getElementById("botSecondMessage").innerHTML =
+    `<il><h4 style= 'color:#28F2E1'>TIPS:<br>
+    - Get Answers Quick with Menu<br>
+    - Mail your queries - admin@businessara.in<br>
+    - Talk with real Human - Click on `+ result +`</h4> </il>`;
+  
   let time = getTime();
 
   $("#chat-timestamp").append(time);

@@ -128,7 +128,7 @@
   white-space: nowrap;
   border-radius: 8px;
 
-  width: calc(100% - 20px);
+  width: calc(100% - 0px);
   height: 47px;
   padding-bottom: 4px;
 }
